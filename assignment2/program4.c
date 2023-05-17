@@ -6,26 +6,27 @@ int main() {
     printf("Enter the student's marks: ");
     scanf("%d", &marks);
 
-    switch (marks) {
-        case 90 ... 100:
+    switch (marks/10) {
+        case 10:
+        case 9:
             printf("Grade: O\n");
             break;
-        case 80 ... 89:
+        case 8:
             printf("Grade: E\n");
             break;
-        case 70 ... 79:
+        case 7:
             printf("Grade: A\n");
             break;
-        case 60 ... 69:
+        case 6:
             printf("Grade: B\n");
             break;
-        case 50 ... 59:
+        case 5:
             printf("Grade: C\n");
             break;
-        case 40 ... 49:
+        case 4:
             printf("Grade: D\n");
             break;
-        case 0 ... 39:
+        case 3:
             printf("Grade: F (FAILED)\n");
             break;
         default:
